@@ -56,14 +56,14 @@ def draw(canvas):
             ball_vel[1]=1.1*ball_vel[1]
         else:
             score2=score2+1
-            spawn_ball("left")           
+            spawn_ball("right")           
     elif ball_pos[0] >= 572:
         if ball_pos[1]>= paddle2_pos[0] and ball_pos[1] <= paddle2_pos[2]:
             ball_vel[0]=-ball_vel[0]*1.1
             ball_vel[1]=ball_vel[1]*1.1
         else:
             score1=score1+1
-            spawn_ball("right")      
+            spawn_ball("left")      
     ball_pos[0]+=ball_vel[0]
     ball_pos[1]+=ball_vel[1]
     # draw ball
